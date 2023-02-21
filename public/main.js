@@ -23,12 +23,12 @@ const events = () => {
   });
   document.querySelector('#post-name').addEventListener('click', () => {
     // update this object with your name
-    const payload = { name: 'YOUR NICKNAME' };
+    const payload = { name: 'Tori loo who' };
     postRequest(payload).then(console.warn);
   });
   document.querySelector('#patch-name').addEventListener('click', () => {
     // update this object with your name and firebaseKey that was logged in the console when you created your name in the database
-    const payload = { name: 'YOUR FULL NAME', firebaseKey: '' };
+    const payload = { name: 'Tori Franklin', firebaseKey: '-NOlqpnvIgs3b-Whrinm' };
     patchRequest(payload).then(console.warn);
   });
   document.querySelector('#delete-name').addEventListener('click', () => {

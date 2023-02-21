@@ -1,5 +1,5 @@
 const jokeEndpoint = 'https://v2.jokeapi.dev/joke/Programming?safe-mode&type=twopart';
-const postEndpoint = 'https://teaching-promises-default-rtdb.firebaseio.com';
+const postEndpoint = 'https://almost-f5441-default-rtdb.firebaseio.com/';
 
 const getRequest = () => new Promise((resolve, reject) => {
   fetch(jokeEndpoint, {
@@ -53,10 +53,15 @@ const patchRequest = (payload) => new Promise((resolve, reject) => {
 
 // QUESTIONS
 // 1. What are the similarities in each of the above functions?
+// they all require a promise
 // 2. What does GET do?
+// it lists an entity/group of entities
 // 3. What does POST do?
+// it creates an entity
 // 4. What does PATCH do?
+// it updates an entity
 // 5. What does DELETE do?
+// it deletes an entity
 // 6. OPTIONAL: Do you see an opportunity to create a utility function for your promise calls?
 
 export {
